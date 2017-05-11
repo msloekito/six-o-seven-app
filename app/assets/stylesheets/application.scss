@@ -14,3 +14,9 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  */
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 1px #bebebe;
+}
