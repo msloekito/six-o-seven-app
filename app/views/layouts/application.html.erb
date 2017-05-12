@@ -22,7 +22,11 @@
 
   <body>
     <div class="background-image"></div>
+    
     <div class="content">
+      <header>
+      <%= render 'layouts/navigation' %>
+    </header>
       <%= yield %>
     </div>
   </body>
