@@ -22,8 +22,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   template: template0
   username: postgres
-  password: password
-  host: localhost
+  port: 5432
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  host: db
   
 development:
   <<: *default
