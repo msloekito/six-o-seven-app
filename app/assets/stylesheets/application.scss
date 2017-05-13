@@ -19,6 +19,10 @@
  $text-color: #f9fbff;
  $shadow: 2px 2px #4b4e54;
  $semi-transparent: rgba(0, 0, 0, .3);
+
+ html {width: 100%;} /* force html to be viewport width */
+ body {width: 100%; }
+
 .box {
     background-color: $semi-transparent;
     box-shadow: $shadow $semi-transparent;
@@ -61,7 +65,7 @@
 //   -o-filter: blur(5px);
 //   -ms-filter: blur(5px);
 //   filter: blur(5px);
-  
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -88,9 +92,10 @@
         text-decoration: none;
         display: inline-block;
         font-size: 1.5em;
+        font-size: 3vw;
     }
-    
-    
+
+
 }
 
 a.text {
@@ -125,11 +130,13 @@ p {
     font-family: $font-stack-sans-serif;
     text-shadow: $shadow;
     font-size: 1.5em;
+    font-size: 3vh;
 }
 
 .fa {
     color: $text-color;
     padding-top: 60px;
+    font-size: 20vh;
 }
 
 .white-text {
